@@ -1,0 +1,8 @@
+# output
+build/
+
+# dependencies
+node_modules/
+
+# misc
+*.orig
