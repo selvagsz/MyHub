@@ -1,10 +1,14 @@
 import React from 'react';
-import HelloWorld from '../../components/HelloWorld';
+import { Link } from 'react-router';
 import './CoreLayout.scss';
 
 export const CoreLayout = ({ children }) => (
   <div className="main-container">
-    <HelloWorld />
+    <h1>selvagsz Hub</h1>
+    <ul>
+      <li><Link to="/notes">Notes</Link></li>
+      <li><Link to="/todos">Todos</Link></li>
+    </ul>
     {children}
   </div>
 );

@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import CoreLayout from './layouts/CoreLayout';
+import Routes from './routes';
 
 render(
-  <CoreLayout />,
+  <Routes />,
   document.getElementById('root')
 );
