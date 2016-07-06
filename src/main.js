@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import HelloWorld from './components/HelloWorld';
+import CoreLayout from './layouts/CoreLayout';
 
 render(
-  <HelloWorld />,
+  <CoreLayout />,
   document.getElementById('root')
 );
