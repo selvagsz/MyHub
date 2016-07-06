@@ -2,7 +2,9 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: [
+      './src/main.js'
+    ]
   },
 
   output: {
@@ -28,5 +30,9 @@ module.exports = {
       template: './src/index.html',
       inject: 'body'
     })
-  ]
+  ],
+
+  devServer: {
+    contentBase: './build'
+  }
 }
