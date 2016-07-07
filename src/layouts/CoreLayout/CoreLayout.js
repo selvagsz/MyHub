@@ -14,7 +14,6 @@ export const CoreLayout = ({ children }) => (
       </ul>
     </nav>
     <div className="container">
-      <h1>selvagsz Hub</h1>
       {children}
     </div>
   </div>
