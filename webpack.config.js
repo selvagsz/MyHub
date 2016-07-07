@@ -1,3 +1,4 @@
+var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var LiveReloadPlugin = require('webpack-livereload-plugin');
 
@@ -13,11 +14,14 @@ module.exports = {
     filename: '[name].js'
   },
 
+  sassLoader: {
+    includePaths: './src/styles'
+  },
+
   module: {
     loaders: [
       {
         test: /\.js|jsx$/,
-        exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
           presets: ['es2015', 'react']
@@ -25,8 +29,8 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: 'style!css?modules&localIdentName=[local]!sass'
-      }
+        loader: 'style!css?modules&localIdentName=[local]!sass?sourceMap'
+      },
     ]
   },
 

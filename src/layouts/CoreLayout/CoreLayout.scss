@@ -1,1 +1,46 @@
-@import "./normalize.scss"
+.main-container {
+  padding-right: 70px;
+
+  > nav {
+    width: 70px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #36313c;
+
+    .nav {
+      margin-top: 50px;
+
+      > li > a {
+        color: #fff;
+
+        &:hover, &.active {
+          color: #ddd;
+          background-color: #4e4c52;
+        }
+      }
+    }
+  }
+
+  .container {
+    max-width: 650px;
+    margin: auto;
+  }
+}
+
+ul.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  > li > a {
+    padding: 20px 5px;
+    display: block;
+    text-align: center;
+
+    &:hover, &:focus {
+      border-bottom: none;
+    }
+  }
+}

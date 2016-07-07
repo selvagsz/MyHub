@@ -1,4 +1,5 @@
 import React from 'react';
+import TextareaAutosize from 'react-textarea-autosize';
 
 class NotesList extends React.Component {
   render() {
@@ -6,7 +7,11 @@ class NotesList extends React.Component {
       <div>
         <h1>Notes</h1>
         <form>
-          <input type="text" placeholder="Write it down..." />
+          <TextareaAutosize className="auto-expand"
+            minRows={3}
+            maxRows={6}
+            defaultValue="Write it down..."
+          />
         </form>
         <div className="notes">
           <ul>
